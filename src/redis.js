@@ -1,5 +1,5 @@
 import { createClient } from "@vercel/kv";
-
+console.log(process.env.KV_REST_API_URL)
 let redis;
 if (
   process.env.UPSTASH_REDIS_REST_URL &&
