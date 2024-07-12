@@ -256,7 +256,6 @@ app.post("/clear", async (req, res) => {
 })
 
 app.post("/checkAuth", async (req, res) => {
-  console.log(process.env)
   const password = process.env.PASSWORD
   try {
     if (!password || password === "") {
