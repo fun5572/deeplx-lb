@@ -1,6 +1,4 @@
 import { createClient } from "@vercel/kv";
-console.log("打印环境变量日志")
-console.log(process.env)
 let redis;
 if (
   process.env.UPSTASH_REDIS_REST_URL &&
